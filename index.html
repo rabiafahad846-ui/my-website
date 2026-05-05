@@ -1,53 +1,70 @@
 <!DOCTYPE html> 
 <html>
+
 <head>
+<title>Meri website</title>
+
 <style>
-  img {
-    border-radius: 50%;
-    margin-top: 10px;
-  }
+body {
+  background-color: lightblue;
+  text-align: center;
+  font-family: Arial;
+}
 
-  h2 {
-    color: purple;
-  }
+h1 {
+  color: red;
+}
 
-  p {
-    font-style: italic;
-  }
+h2 {
+  color: purple;
+}
+
+p {
+  color: green;
+  font-size: 20px;
+  font-style: italic;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
+}
 </style>
-   <title>Meri website</title>
-<style>
-  body {
-    background-color: lightblue;
-    text-align: center;
-    font-family: Arial;
-  }
 
-  h1 {
-    color: red;
-  }
-
-  p {
-    color: green;
-    font-size: 20px;
-  }
-</style>
 </head>
+
 <body>
-<h2>Mera Naam: _eman fahad_____</h2>
+
+<h2>Mera Naam: eman fahad</h2>
 
 <p>Assalam o Alaikum! Main web development seekh rahi hoon 😊</p>
- <button onclick="changeColor()">Change Color</button>
+
+<button onclick="changeColor()">Change Color</button>
+<button onclick="showMessage()">Click Me</button>
+
+<h1>Aslam o alikum</h1>
+<p>Yeh meri pehli web site hai</p>
 
 <script>
+function showMessage() {
+  alert("Welcome to my website 😄");
+}
+
 function changeColor() {
   let colors = ["red", "blue", "green", "pink", "orange"];
   let random = Math.floor(Math.random() * colors.length);
   document.body.style.backgroundColor = colors[random];
 }
 </script>
-<h1>Aslam o alikum </h1>
-<p>Yeh meri pehli web site hai</p>
 
 </body>
 </html>
